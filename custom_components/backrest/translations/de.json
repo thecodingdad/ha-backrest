@@ -10,7 +10,7 @@
           "password": "Passwort"
         },
         "data_description": {
-          "url": "Die Basis-URL Ihrer Backrest-Instanz (z.B. http://192.168.1.100:9898)",
+          "url": "Die Basis-URL Ihrer Backrest-Instanz (z.B. {example_url})",
           "username": "Benutzername fuer Basic Auth (leer lassen wenn Auth deaktiviert ist)",
           "password": "Passwort fuer Basic Auth (leer lassen wenn Auth deaktiviert ist)"
         }
