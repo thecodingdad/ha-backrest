@@ -4,9 +4,9 @@
   "codeowners": ["@thecodingdad"],
   "config_flow": true,
   "documentation": "https://github.com/thecodingdad/ha-backrest",
-  "issue_tracker": "https://github.com/thecodingdad/ha-backrest/issues",
   "integration_type": "hub",
   "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/thecodingdad/ha-backrest/issues",
   "requirements": ["croniter>=1.3.8"],
   "version": "1.0.0"
 }
