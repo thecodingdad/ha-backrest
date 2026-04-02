@@ -1,0 +1,103 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Backrest Setup",
+        "description": "Enter the connection details for your Backrest instance.",
+        "data": {
+          "url": "URL",
+          "username": "Username",
+          "password": "Password"
+        },
+        "data_description": {
+          "url": "The base URL of your Backrest instance (e.g. http://192.168.1.100:9898)",
+          "username": "Username for Basic Auth (leave empty if auth is disabled)",
+          "password": "Password for Basic Auth (leave empty if auth is disabled)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to Backrest.",
+      "invalid_auth": "Invalid username or password.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This Backrest instance is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Backrest Options",
+        "data": {
+          "scan_interval": "Scan interval (seconds)"
+        },
+        "data_description": {
+          "scan_interval": "How often to poll backup status (10-3600 seconds)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "last_backup_status": {
+        "name": "Last backup status"
+      },
+      "last_backup_time": {
+        "name": "Last backup time"
+      },
+      "next_backup_time": {
+        "name": "Next scheduled backup"
+      },
+      "backup_duration": {
+        "name": "Backup duration"
+      },
+      "files_added": {
+        "name": "Files added"
+      },
+      "files_changed": {
+        "name": "Files changed"
+      },
+      "snapshot_count": {
+        "name": "Snapshot count"
+      },
+      "bytes_processed": {
+        "name": "Bytes processed"
+      },
+      "data_added": {
+        "name": "Bytes added"
+      },
+      "last_operation_id": {
+        "name": "Last operation ID"
+      },
+      "display_message": {
+        "name": "Last backup message"
+      },
+      "hours_since_last_backup": {
+        "name": "Hours since last backup"
+      },
+      "total_snapshots": {
+        "name": "Total snapshots"
+      }
+    },
+    "binary_sensor": {
+      "backup_running": {
+        "name": "Backup running"
+      }
+    },
+    "button": {
+      "trigger_backup": {
+        "name": "Trigger backup"
+      },
+      "prune_repo": {
+        "name": "Prune repository"
+      },
+      "check_repo": {
+        "name": "Check repository integrity"
+      },
+      "unlock_repo": {
+        "name": "Unlock repository"
+      }
+    }
+  }
+}

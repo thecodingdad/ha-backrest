@@ -1,0 +1,103 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Backrest Einrichtung",
+        "description": "Geben Sie die Verbindungsdaten Ihrer Backrest-Instanz ein.",
+        "data": {
+          "url": "URL",
+          "username": "Benutzername",
+          "password": "Passwort"
+        },
+        "data_description": {
+          "url": "Die Basis-URL Ihrer Backrest-Instanz (z.B. http://192.168.1.100:9898)",
+          "username": "Benutzername fuer Basic Auth (leer lassen wenn Auth deaktiviert ist)",
+          "password": "Passwort fuer Basic Auth (leer lassen wenn Auth deaktiviert ist)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung zu Backrest fehlgeschlagen.",
+      "invalid_auth": "Ungueltiger Benutzername oder Passwort.",
+      "unknown": "Unerwarteter Fehler."
+    },
+    "abort": {
+      "already_configured": "Diese Backrest-Instanz ist bereits konfiguriert."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Backrest Optionen",
+        "data": {
+          "scan_interval": "Abfrageintervall (Sekunden)"
+        },
+        "data_description": {
+          "scan_interval": "Wie oft der Backup-Status abgefragt wird (10-3600 Sekunden)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "last_backup_status": {
+        "name": "Letzter Backup-Status"
+      },
+      "last_backup_time": {
+        "name": "Letztes Backup"
+      },
+      "next_backup_time": {
+        "name": "Naechstes geplantes Backup"
+      },
+      "backup_duration": {
+        "name": "Backup-Dauer"
+      },
+      "files_added": {
+        "name": "Dateien hinzugefuegt"
+      },
+      "files_changed": {
+        "name": "Dateien geaendert"
+      },
+      "snapshot_count": {
+        "name": "Anzahl Snapshots"
+      },
+      "bytes_processed": {
+        "name": "Verarbeitete Bytes"
+      },
+      "data_added": {
+        "name": "Hinzugefuegte Bytes"
+      },
+      "last_operation_id": {
+        "name": "Letzte Operations-ID"
+      },
+      "display_message": {
+        "name": "Letzte Backup-Meldung"
+      },
+      "hours_since_last_backup": {
+        "name": "Stunden seit letztem Backup"
+      },
+      "total_snapshots": {
+        "name": "Snapshots gesamt"
+      }
+    },
+    "binary_sensor": {
+      "backup_running": {
+        "name": "Backup laeuft"
+      }
+    },
+    "button": {
+      "trigger_backup": {
+        "name": "Backup starten"
+      },
+      "prune_repo": {
+        "name": "Repository bereinigen"
+      },
+      "check_repo": {
+        "name": "Repository-Integritaet pruefen"
+      },
+      "unlock_repo": {
+        "name": "Repository entsperren"
+      }
+    }
+  }
+}
