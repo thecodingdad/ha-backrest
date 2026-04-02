@@ -16,7 +16,7 @@ Home Assistant integration to monitor and control Backrest backup server instanc
 
 ## Prerequisites
 
-- Home Assistant 2024.1.0 or newer
+- Home Assistant 2026.3.0 or newer
 - Running Backrest server with API access
 
 ## Installation
